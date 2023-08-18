@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="KGk-i7-Jjw" customClass="NoteTableViewCell" customModule="NotesModule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="474" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIb-9f-qmo">
+                        <rect key="frame" x="10" y="5" width="454" height="112"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xz6-yW-ZG3">
+                                <rect key="frame" x="10" y="10" width="434" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="960-Ia-tQz">
+                                <rect key="frame" x="32" y="31" width="412" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X7o-Az-ECD">
+                                <rect key="frame" x="10" y="25.5" width="12" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="hI2-NZ-YHK"/>
+                                    <constraint firstAttribute="height" constant="12" id="kkl-9C-bTO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X7o-Az-ECD" firstAttribute="top" secondItem="xz6-yW-ZG3" secondAttribute="bottom" constant="15" id="74n-8E-8Ws"/>
+                            <constraint firstItem="960-Ia-tQz" firstAttribute="leading" secondItem="X7o-Az-ECD" secondAttribute="trailing" constant="10" id="9nD-nR-xWK"/>
+                            <constraint firstItem="xz6-yW-ZG3" firstAttribute="leading" secondItem="XIb-9f-qmo" secondAttribute="leading" constant="10" id="Knd-Vv-aol"/>
+                            <constraint firstItem="X7o-Az-ECD" firstAttribute="leading" secondItem="xz6-yW-ZG3" secondAttribute="leading" id="a1q-QL-OoT"/>
+                            <constraint firstItem="960-Ia-tQz" firstAttribute="centerY" secondItem="X7o-Az-ECD" secondAttribute="centerY" id="ciy-Bb-xHW"/>
+                            <constraint firstAttribute="trailing" secondItem="xz6-yW-ZG3" secondAttribute="trailing" constant="10" id="h64-pz-8Hz"/>
+                            <constraint firstItem="xz6-yW-ZG3" firstAttribute="top" secondItem="XIb-9f-qmo" secondAttribute="top" constant="10" id="lBS-VU-SiM"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="X7o-Az-ECD" secondAttribute="bottom" constant="10" id="pEQ-3f-bl3"/>
+                            <constraint firstAttribute="trailing" secondItem="960-Ia-tQz" secondAttribute="trailing" constant="10" id="yUg-Zk-fft"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XIb-9f-qmo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Nb6-pA-Zmm"/>
+                    <constraint firstAttribute="trailing" secondItem="XIb-9f-qmo" secondAttribute="trailing" constant="10" id="OFZ-03-oqD"/>
+                    <constraint firstAttribute="bottom" secondItem="XIb-9f-qmo" secondAttribute="bottom" constant="10" id="YmU-nL-B1I"/>
+                    <constraint firstItem="XIb-9f-qmo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ZJ8-1a-63x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="noteCellBackGround" destination="XIb-9f-qmo" id="Cqr-9L-smS"/>
+                <outlet property="noteDateAndTime" destination="960-Ia-tQz" id="NO2-xB-7Bi"/>
+                <outlet property="noteStatusImage" destination="X7o-Az-ECD" id="eNB-2V-2Yh"/>
+                <outlet property="noteTitleLabel" destination="xz6-yW-ZG3" id="Uqd-Ik-ORQ"/>
+            </connections>
+            <point key="canvasLocation" x="252.17391304347828" y="116.85267857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
